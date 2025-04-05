@@ -1,6 +1,6 @@
 # Pandesal CPU
 
-**Pandesal CPU** is an 8-bit general-purpose CPU architecture inspired by the classic **MOS 6502**. Built from the ground up for educational use and hobbyist computing, it features a simple instruction set, a 16-bit address bus, and core components implemented in Logisim Evo.
+**Pandesal CPU** is an 8-bit multi-cycle general-purpose CPU architecture inspired by the classic **MOS 6502**. Built at the logic-gate level and implemented in Logisim Evo.
 
 ---
 
