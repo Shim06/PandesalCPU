@@ -50,3 +50,7 @@ ASL abs
 LSR abs
 ROL abs
 ROR abs
+CPX #
+CPY #
+CPX abs
+CPY abs
