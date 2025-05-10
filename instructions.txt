@@ -42,3 +42,11 @@ SEC impl
 DEX impl
 DEY impl
 CMP impl
+ASL A
+LSR A
+ROL A
+ROR A
+ASL abs
+LSR abs
+ROL abs
+ROR abs
