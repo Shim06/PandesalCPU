@@ -56,3 +56,9 @@ CPX abs
 CPY abs
 LDX abs
 LDY abs
+LDA abs,X
+LDA abs,Y
+AND abs,X
+AND abs,Y
+STA abs,X
+STA abs,Y
