@@ -54,3 +54,5 @@ CPX #
 CPY #
 CPX abs
 CPY abs
+LDX abs
+LDY abs
