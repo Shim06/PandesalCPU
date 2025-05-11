@@ -46,14 +46,16 @@ Convert your `.asm` programs into executable `.bin` images using the [PandesalAs
 
 ## ALU Instructions
 
-- `ADC` – Add with Carry  
-- `SBC` – Subtract with Carry  
-- `NOT` – Bitwise NOT  
-- `AND` – Bitwise AND  
-- `XOR` – Bitwise XOR  
-- `OR`  – Bitwise OR  
-- `LSH` – Logical Shift Left  
-- `RSH` – Logical Shift Right  
+| Mnemonic | Description              |
+|----------|--------------------------|
+| `ADC`    | Add with Carry           |
+| `SBC`    | Subtract with Carry      |
+| `NOT`    | Bitwise NOT              |
+| `AND`    | Bitwise AND              |
+| `XOR`    | Bitwise XOR              |
+| `OR`     | Bitwise OR               |
+| `LSH`    | Logical Shift Left       |
+| `RSH`    | Logical Shift Right      |
 
 ---
 
