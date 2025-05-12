@@ -62,3 +62,5 @@ AND abs,X
 AND abs,Y
 STA abs,X
 STA abs,Y
+INC A
+INC abs
