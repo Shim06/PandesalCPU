@@ -64,3 +64,6 @@ STA abs,X
 STA abs,Y
 INC A
 INC abs
+STA ind
+ADC abs,X
+ADC abs,Y
