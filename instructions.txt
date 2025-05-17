@@ -69,3 +69,5 @@ ADC abs,X
 ADC abs,Y
 ADD #
 SUB #
+ADD abs
+SUB abs
