@@ -41,7 +41,7 @@ INY impl
 SEC impl
 DEX impl
 DEY impl
-CMP impl
+CMP #
 ASL A
 LSR A
 ROL A
