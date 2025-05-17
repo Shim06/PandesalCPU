@@ -67,3 +67,5 @@ INC abs
 STA ind
 ADC abs,X
 ADC abs,Y
+ADD #
+SUB #
