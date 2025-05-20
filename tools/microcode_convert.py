@@ -1,3 +1,6 @@
+input_file = "input.txt"
+output_file = "microcode.txt"
+
 def main():
     print("1: CLI Input")
     print("2: Input.txt")
@@ -6,7 +9,7 @@ def main():
         microcode = input("Enter microcode:")
     elif mode == "2":
         pass
-        with open("input.txt", "r") as file:
+        with open(input_file, "r") as file:
             microcode = file.read()
     else: return
     
@@ -33,8 +36,7 @@ def main():
     ALU_Op = {}
     ALU_Out = {}
     HiB_Sel = {}
-    Br_En = {}
-    IClear = {}
+    Mod = {}
     Inc = {}
 
     Reg_Src["0000"] = "PC"
@@ -84,10 +86,10 @@ def main():
     ALU_Out["0"] = ""
     HiB_Sel["1"] = "HiB_Sel"
     HiB_Sel["0"] = ""
-    Br_En["1"] = "Br_En"
-    Br_En["0"] = ""
-    IClear["1"] = "IC"
-    IClear["0"] = ""
+    Mod["00"] = ""
+    Mod["01"] = "IC"
+    Mod["10"] = "Br_En"
+    Mod["11"] = "Bus Inc"
     Inc["1"] = "Inc"
     Inc["0"] = ""
 
@@ -107,20 +109,49 @@ def main():
             counter2 += 1
             microcode = "".join(hex_list)
             hex_list = []
-            if microcode != "0000000000000000":
-                print(f"{Reg_Src[microcode[:4]]} > {Reg_Dst[microcode[4:8]]} | {ALU_Op[microcode[8:11]]} | {ALU_Out[microcode[11]]} | {HiB_Sel[microcode[12]]} | {Br_En[microcode[13]]} | {IClear[microcode[14]]} | {Inc[microcode[15]]}")
+            if microcode != "0000000000000000" and counter2 > 3:
+                text = ""
+                if Reg_Src[microcode[:4]] != "":
+                    text += f"{Reg_Src[microcode[:4]]}"
+                if Reg_Dst[microcode[4:8]] != "":
+                    text += f" > {Reg_Dst[microcode[4:8]]}"
+                if ALU_Op[microcode[8:11]] != "":
+                    text += f" | {ALU_Op[microcode[8:11]]}"
+                if ALU_Out[microcode[11]] != "":
+                    text += f" | {ALU_Out[microcode[11]]}"
+                if HiB_Sel[microcode[12]] != "":
+                    text += f" | {HiB_Sel[microcode[12]]}"
+                if Mod[microcode[13:15]] != "":
+                    text += f" | {Mod[microcode[13:15]]}"
+                if Inc[microcode[15]] != "":
+                    text += f" | {Inc[microcode[15]]}"
+                print(text)
 
 
-    print("Microcode: ")
-    for c in code:
-        hex_list.append(c)
-        counter += 1
-        if counter == 16:
-            counter = 0
-            number = hex(int("".join(hex_list), 2))[2:]
-            if number == "0": number = "0000"
-            print(number, end=" ")
-            hex_list = []
+    if mode == "1":
+        print("Microcode: ")
+        for c in code:
+            hex_list.append(c)
+            counter += 1
+            if counter == 16:
+                counter = 0
+                number = hex(int("".join(hex_list), 2))[2:]
+                if number == "0": number = "0000"
+                print(number, end=" ")
+                hex_list = []
+    elif mode == "2":
+        with open(output_file, "w") as file:
+            file.write("v3.0 hex words plain\n")
+            for c in code:
+                hex_list.append(c)
+                counter += 1
+                if counter == 16:
+                    counter = 0
+                    number = hex(int("".join(hex_list), 2))[2:]
+                    if number == "0": number = "0000"
+                    file.write(number)
+                    file.write(" ")
+                    hex_list = []
 
 if __name__ == "__main__":
     main()
