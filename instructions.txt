@@ -86,3 +86,8 @@ TA1 impl
 TA2 impl
 TA3 impl
 TA4 impl
+T0A impl
+T1A impl
+T2A impl
+T3A impl
+T4A impl
