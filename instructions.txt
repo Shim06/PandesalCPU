@@ -76,3 +76,8 @@ LD1 #
 LD2 #
 LD3 #
 LD4 #
+LD0 abs
+LD1 abs
+LD2 abs
+LD3 abs
+LD4 abs
