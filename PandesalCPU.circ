@@ -39550,6 +39550,34 @@ f701 f108 7100 f602
     <a name="circuit" val="Register8"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="2.0"/>
+    <appear>
+      <rect height="4" stroke="none" width="10" x="50" y="58"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="64">D</text>
+      <rect height="3" stroke="none" width="10" x="50" y="79"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="84">Load</text>
+      <rect height="3" stroke="none" width="10" x="50" y="99"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="104">Enable</text>
+      <rect height="3" stroke="none" width="10" x="50" y="119"/>
+      <polyline fill="none" points="61,116 68,120 61,124" stroke="#000000" stroke-width="2"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="73" y="124">Clk</text>
+      <rect height="3" stroke="none" width="10" x="50" y="139"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="65" y="144">Reset</text>
+      <rect height="4" stroke="none" width="10" x="260" y="58"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="255" y="64">Q</text>
+      <rect height="4" stroke="none" width="10" x="260" y="78"/>
+      <text dominant-baseline="alphabetic" fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="255" y="84">AlwaysQ</text>
+      <rect height="20" stroke="none" width="200" x="60" y="150"/>
+      <rect fill="none" height="120" stroke="#000000" stroke-width="2" width="200" x="60" y="50"/>
+      <text dominant-baseline="alphabetic" fill="#ffffff" font-family="Dialog" font-size="14" font-weight="bold" text-anchor="middle" x="160" y="164">Register8</text>
+      <circ-anchor facing="east" x="270" y="60"/>
+      <circ-port dir="in" pin="210,160" x="50" y="80"/>
+      <circ-port dir="in" pin="210,190" x="50" y="100"/>
+      <circ-port dir="in" pin="210,220" x="50" y="120"/>
+      <circ-port dir="in" pin="210,260" x="50" y="140"/>
+      <circ-port dir="in" pin="270,130" x="50" y="60"/>
+      <circ-port dir="out" pin="960,370" x="270" y="60"/>
+      <circ-port dir="out" pin="960,400" x="270" y="80"/>
+    </appear>
     <comp lib="0" loc="(210,160)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Load"/>
