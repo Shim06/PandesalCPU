@@ -8,6 +8,10 @@
 
 Convert your `.asm` programs into executable `.bin` images using the [PandesalAssembler](https://github.com/Shim06/PandesalAssembler).
 
+## Emulator
+
+Run your Pandesal `.bin` programs using the [PandesalEmu](https://github.com/Shim06/PandesalEmu)
+
 ## Architecture Specs
 
 - **Data Bus:** 8-bit  
