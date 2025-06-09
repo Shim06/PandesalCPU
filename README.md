@@ -10,7 +10,7 @@ Convert your `.asm` programs into executable `.bin` images using the [PandesalAs
 
 ## Emulator
 
-Run your Pandesal `.bin` programs using the [PandesalEmu](https://github.com/Shim06/PandesalEmu)
+Run your Pandesal `.bin` programs using the [PandesalEmu](https://github.com/Shim06/PandesalEmu).
 
 ## Architecture Specs
 
