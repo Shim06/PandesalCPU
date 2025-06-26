@@ -2,6 +2,10 @@
 
 **Pandesal CPU** is an 8-bit multi-cycle general-purpose CPU architecture inspired by the classic **MOS 6502**. Built at the logic-gate level and implemented in Logisim Evo.
 
+<p align="center">
+    <img src="https://github.com/Shim06/PandesalCPU/blob/e9fe837feb57f12e510e1308459be8efaffd6bc1/docs/images/CPU.png">
+</p>
+
 ---
 
 ## Assembler
